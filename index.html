@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e40ce49ad7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/ATM_new.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Networking & Cyber Security</p>
+            <h1>Hi, I'm <span>Anup Thapa Magar</span><br>straight outta Nepal</h1>
+        </div>
+        </div>
+       </div>
+       <!---- -------ABout-- --->
+       <div id="about">
+       <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>safjhbsdfjhbsdfjhbdsfjhdbsfjdshbfdsfbjhsdfbjsdhfbsdjf</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Networking</span><br>-Virtualization Environment <br>-CCNA Trained & Configuration of networking devices<br>-VOIP & PBX phone system <br>-Internet & Intranet systems <br>-Active directory domains/ domain network</li>
+                    <li><span>Cyber Security</span><br>-Vulnerability Assessment & Penetration tester<br>-Part-time Bug Bounty Hunter<br>-Security Ethiusiast</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Kantipur Management</span><br>The role is to maintain, troubleshoot, develop and secure the whole IT infrastructure of the company.</li>
+                    <li><span>Vairav Technology</span><br>Vulnerability Assessment & Penetration testing Intern</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Bachelors In Networking and IT Security</span><br>Islington College</li>
+                </ul>
+            </div>
+            </div>
+            </div>
+       </div>
+       </div>
+</div>
+
+<!------------services------------->   
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>Network Design</h2>
+                <p>sfsdgfdgdfgfdgfdgfdgfdgfdgdfg</p>
+                <a href="#">learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>Penetration Testing and Network Security</h2>
+                <p>sfsdgfdgdfgfdgfdgfdgfdgfdgdfg</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---- ----------portfoloio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/networking.png">
+                <div class="layer">
+                    <h3>Networking And Deployment</h3>
+                    <p>Worked in deploying networking devices and systems in different projects. The projects specially includes VOIP systems</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/security.png">
+                <div class="layer">
+                    <h3>Cyber Security Researcher</h3>
+                    <p>Security researcher and work for securing the network infrastructure and devices of the company</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/VAPT.png">
+                <div class="layer">
+                    <h3>Vulnerability Assessment and Penetration Testing</h3>
+                    <p>Working as a part time in VAPT and Penetration testing different application and testing in local environments. Currently a learner and improvising skills in VAPT. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+        <div class="contact-left">
+           <h1 class="sub-title">Contact Me</h1>
+           <p><i class="fa-solid fa-paper-plane"></i>anupthapa248@gmail.com</p>  
+           <p><i class="fa-solid fa-phone-volume"></i>+977-9866410797</p>
+           <div class="social-icons">
+            <a href="https://bit.ly/3XIgCNK"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://bit.ly/3IDf2Z1"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://bit.ly/3XIPiPs"><i class="fa-brands fa-linkedin"></i></a>
+           </div>
+           <a href="images/AnupThapa_CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+        <form action="https://formspree.io/f/xrgvloep" method="post">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="sumbit" class="btn btn2">Sumbit</button>
+        </form>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright © Anup. Developed <i class="fa-solid fa-shield-heart"></i> by ATM</p>
+</div>
+</div>
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ 
+ </script>   
+</body>
+</html>
