@@ -15,8 +15,8 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/backgrounds.png);
-    background-size: 90%;
+    background-image: url(images/background-f.png);
+    background-size: 120%;
     background-position: left;
 }
 .container{
@@ -307,7 +307,61 @@ form .btn2{
     margin-top: 20px;
 }
 /*-------------------csss for small screen-----------*/
+nav .fa{
+    display: none;
+}
+@media only screen and (max-width: 400px){
+    #header{
+        background-image: url(images/3.png);
+    }
+    .header-text{
+        margin-top: 0%;
+        font-size: 20px;
+    }
+    .header-text h1{
+        font-size: 20px;
+    }
+    nav .fa{
+        display: block;
+        font-size: 20px;
+    }
+    nav ul{
+        background: #217929;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block; /*----vertical block---*/
+        margin: 25px;
+    }
+    nav ul .fa{
+        position: absolute;
+        top: 25px;
 
-@media only screen and (max-width: 600px){
-    #header
+    }
+    .sub-title{
+        font-size: 30px;
+    }
+    .about-col-1, .about-col-2{
+    flex-basis: 100%;
+    }'
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
 }

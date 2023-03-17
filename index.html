@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e40ce49ad7.js" crossorigin="anonymous"></script>
@@ -13,17 +14,19 @@
     <div class="container">
         <nav>
             <img src="images/ATM_new.png" class="logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Networking & Cyber Security</p>
-            <h1>Hi, I'm <span>Anup Thapa Magar</span><br>straight outta Nepal</h1>
+            <h1>Hi, I'm <span>Anup Thapa Magar</span> straight outta Nepal</h1>
         </div>
         </div>
        </div>
@@ -36,7 +39,7 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>safjhbsdfjhbsdfjhbdsfjhdbsfjdshbfdsfbjhsdfbjsdhfbsdjf</p>
+                <p></br>Hi everyone! This is Anup. I am a IT networking and cryber-security Ethiusiast and I love working around with computers. </p>
             <div class="tab-titles">
                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                 <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -161,6 +164,17 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
  
- </script>   
+ </script> 
+ <script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+ </script>  
 </body>
 </html>
